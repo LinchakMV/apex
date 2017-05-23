@@ -1,13 +1,17 @@
-
-body{
+ @font-face{
+    font-family: 'Helvetica Neue';
+    src: url(../fonts/HelveticaNeue.ttf);
+ }
+ body{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;
     ul{
         list-style-type: none;
-    }
-    
+    }    
     a{
         text-decoration: none;
         color: #000;
@@ -81,7 +85,7 @@ body{
         display: block;
     }
     &__user-list li:hover a{
-        color: green;
+        color: #90c553;
         font-size: 20px;
     }
     
@@ -160,21 +164,22 @@ body{
         }
 }
 #block2{
-    width: 650px; 
+    width: 650px;
+    margin: 0 110px 0 50px; 
     h2{
         white-space: nowrap;
         max-width: 210px;
+        padding-bottom: 12px;
+        border-bottom: 4px solid #90c553;
     }    
 }
-
 .sub-menu{
     margin-top: 15px;
     &__active{ 
         display: block;
         i{
             color: #90c553;
-        }
-        
+        }        
     }
 }
 .hide{
@@ -192,16 +197,16 @@ body{
 }
 
 // MAIN-F__ITEM
-.main-f{
-    &__item{
-        margin: 0 110px 0 50px;
-        h2{
-            max-width: 90px;
-            font-size: 25px;
-            padding-bottom: 12px;
-            border-bottom: 4px solid #90c553
-        }
+#block1{
+    margin: 0 110px 0 50px;
+    h2{
+        max-width: 90px;
+        font-size: 25px;
+        padding-bottom: 12px;
+        border-bottom: 4px solid #90c553;
     }
+}
+.main-f{
     &__button, &__name, &__contact{
         display: flex;
         justify-content: space-between;
