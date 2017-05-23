@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Open+Sans:300,400,700,800" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script> -->    
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <script src="https://use.fontawesome.com/67dfbbbb80.js"></script> -->
+    <script src="https://use.fontawesome.com/8adf2fd3b2.js"></script>
+</head>
+<body>
+<!--HEADER-->
+    <!--<header>-->
+   <div class="header">
+       <div class="header__logo">
+           <a href="#"><img src="./img/logo.png" alt="LOGO"></a>
+           <form class="header__search">
+               <button type="submit"><i class="fa fa-search fa-2x" aria-hidden="true"></i></button>
+               <input type="text" placeholder="SEARCH">
+           </form>
+        </div>
+       <div class="header__link">
+           <a href="#">Browse</a>
+           <a href="#">How it works</a>           
+       </div>
+       <div class="header__user">
+           <h3>LOG IN</h3>
+           <img src="./img/user.png" alt="photo">
+            <ul class="header__user-list">
+               <li><a href="#">Settings</a></li>
+               <li><a href="#">Log In</a></li>
+               <li><a href="#">Logout</a></li>
+            </ul>
+       </div>
+   </div>
+   <!--</header>-->
+<!--/HEADER-->
+    <div class="content">
+        <ul class="main-menu">
+            <li class="main-menu__item account menu-active"><a href="#"><i class="fa fa-user" aria-hidden="true"></i>My account</a></li>
+            <li class="main-menu__item notification"><a href="#"><i class="fa fa-bell" aria-hidden="true"></i>Notifications</a></li>
+            <li class="main-menu__item request"><a href="#"><i class="fa fa-file-text" aria-hidden="true"></i>My requests</a></li>
+            <li class="main-menu__item archive"><a href="#"><i class="fa fa-clipboard" aria-hidden="true"></i>Archive</a></li>
+            <li class="main-menu__item serv"><a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i>Terms of service</a></li>
+            <li class="main-menu__item logout"><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a></li>
+        </ul>
+        <div class="main-f__item  sub-menu__active"  id="block1">
+            <h2>Main</h2>
+            <div class="main-f__name">
+                <input type="text" placeholder="Name:" class="input">
+                <input type="text" placeholder="Sur Name:" class="input">
+            </div>
+            <div class="main-f__contact">
+                <input type="number" placeholder="Phone:" class="input">
+                <input type="email" placeholder="E-mail:" class="input">
+            </div>
+            <div class="main-f__button">
+                <button class="button-m">Change Information</button>
+                <button class="button-m">Change Password</button>
+            </div>
+        </div>
+        <div id="block2" class="hide">
+            <h2>Sorry, while empty</h2>
+        </div>
+        <div class="sub-menu">
+            <ul class="account__menu">
+                <li class="sub-menu__active"><a href="#" onclick="showHide('1')"><i class="fa fa-home" aria-hidden="true"></i>Main</a></li>
+                <li><a href="#" onclick="showHide('2')"><i class="fa fa-user" aria-hidden="true"></i>Avatar</a></li>
+                <li><a href="#" onclick="showHide('2')"><i class="fa fa-address-book" aria-hidden="true"></i>Contacts</a></li>
+                <li><a href="#" onclick="showHide('2')"><i class="fa fa-map-marker" aria-hidden="true"></i>Location</a></li>
+                <li><a href="#" onclick="showHide('2')"><i class="fa fa-credit-card-alt" aria-hidden="true"></i>Payment</a></li>
+                <li><a href="#" onclick="showHide('2')"><i class="fa fa-user-secret" aria-hidden="true"></i>Intellectuals</a></li>
+            </ul>
+        </div>
+    </div> 
+    <script type="text/javascript">
+        var selected_pnt = 1;
+        console.log(event);
+        function showHide(pnt_to_select) {
+            if (selected_pnt != pnt_to_select) {
+                 document.getElementById("block"+selected_pnt).className = "hide";
+                 document.getElementById("block"+pnt_to_select).className = "main-f__item";
+                selected_pnt = pnt_to_select;
+                
+            }
+        }
+    </script>   
+</body>
+    
+</html>

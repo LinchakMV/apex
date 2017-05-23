@@ -1,0 +1,231 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    ul{
+        list-style-type: none;
+    }
+    
+    a{
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+// HEADER
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 38px 50px 38px 0;
+    border-bottom: 2px solid #dbddde;
+    &__logo{
+        display: flex;
+        padding-right: 90px;
+        img{
+            width: 45px;
+            height: 45px;
+        }
+    }
+    &__link{
+        font-size: 18px;
+        text-transform: uppercase;
+        padding-top: 10px;
+        margin-right: 160px;
+        white-space: nowrap;
+        a{
+            padding: 0 30px;
+        }
+    }
+    &__user{
+        display: flex;
+        h3{
+            margin-top: 10px;
+            padding-right: 20px;
+            white-space: nowrap;
+        }
+        img{
+            width: 45px;
+            height: 45px;
+        }
+    }
+    
+}
+.header{
+    &__user-list{
+        position: absolute;
+        margin-left: 110px;
+        cursor: pointer;
+    }
+    &__user-list:before{
+        content: " ";
+        position: absolute;
+        border: 10px solid transparent;	
+        border-top: 10px solid #000;
+        cursor: pointer;
+    }
+    &__user-list li{
+        display: none;
+        padding-top: 20px;
+        a{
+            text-decoration: none;
+            color: #000;
+            font-size: 18px;
+            text-transform: uppercase;
+        }       
+    }
+    &__user-list:hover li{
+        display: block;
+    }
+    &__user-list li:hover a{
+        color: green;
+        font-size: 20px;
+    }
+    
+}
+
+// FORM
+.header__search{
+  position: relative;
+  width: 300px;
+  margin-left: 20px;
+  height: 42px;
+  button{
+    background: transparent;
+    border: none;
+    height: 42px;
+    width: 42px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    }
+    input {
+        height: 42px;
+        width: 0;
+        padding: 0 42px 0 45px;
+        border: none;
+        border-bottom: 2px solid transparent;
+        outline: none;
+        background: transparent;
+        transition: .4s cubic-bezier(0, 0.8, 0, 1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        font-size: 20px;
+    }
+    input:focus {
+        width: 300px;
+        z-index: 1;
+        border-bottom: 2px solid #000;
+    }
+}
+// /FORM
+
+// /HEADER
+
+// CONTENT
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 20px;
+
+}
+.main-menu{
+    border-right: 2px solid #dbddde;
+    &__item{
+        font-size: 16px;
+        margin: 20px 35px 20px 0;
+        white-space: nowrap;
+        i{
+            margin-right: 15px;
+        }
+    }
+}
+.menu-active{
+    i{
+        color: #90c553;
+    }
+}
+.account__menu li{
+    margin: 20px 35px 20px 0;
+    i{
+            margin-right: 25px;
+        }
+}
+#block2{
+    width: 650px; 
+    h2{
+        white-space: nowrap;
+        max-width: 210px;
+    }    
+}
+
+.sub-menu{
+    margin-top: 15px;
+    &__active{ 
+        display: block;
+        i{
+            color: #90c553;
+        }
+        
+    }
+}
+.hide{
+    display: none;
+}
+
+.account__menu{
+    padding-left: 20px;
+    border-left: 2px solid #dbddde;
+    li:active{
+        i{
+            color: #90c553;
+        }
+    }
+}
+
+// MAIN-F__ITEM
+.main-f{
+    &__item{
+        margin: 0 110px 0 50px;
+        h2{
+            max-width: 90px;
+            font-size: 25px;
+            padding-bottom: 12px;
+            border-bottom: 4px solid #90c553
+        }
+    }
+    &__button, &__name, &__contact{
+        display: flex;
+        justify-content: space-between;
+        
+    } 
+    &__button{
+        margin: 20px 5px 0 5px;
+    }   
+}
+.input{
+    width: 295px;
+    height: 38px;
+    border: 2px solid #dbddde;
+    border-radius: 8px;
+    padding-left: 10px;
+    margin: 5px;
+}
+.button-m{
+    width: 185px;
+    height: 38px;
+    background-color: #90c553;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+}
+// /MAIN-F__ITEM
+// /CONTENT

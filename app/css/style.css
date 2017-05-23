@@ -1,0 +1,193 @@
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center; }
+  body ul {
+    list-style-type: none; }
+  body a {
+    text-decoration: none;
+    color: #000; }
+
+.header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  padding: 38px 50px 38px 0;
+  border-bottom: 2px solid #dbddde; }
+  .header__logo {
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 90px; }
+    .header__logo img {
+      width: 45px;
+      height: 45px; }
+  .header__link {
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-top: 10px;
+    margin-right: 160px;
+    white-space: nowrap; }
+    .header__link a {
+      padding: 0 30px; }
+  .header__user {
+    display: -ms-flexbox;
+    display: flex; }
+    .header__user h3 {
+      margin-top: 10px;
+      padding-right: 20px;
+      white-space: nowrap; }
+    .header__user img {
+      width: 45px;
+      height: 45px; }
+
+.header__user-list {
+  position: absolute;
+  margin-left: 110px;
+  cursor: pointer; }
+
+.header__user-list:before {
+  content: " ";
+  position: absolute;
+  border: 10px solid transparent;
+  border-top: 10px solid #000;
+  cursor: pointer; }
+
+.header__user-list li {
+  display: none;
+  padding-top: 20px; }
+  .header__user-list li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    text-transform: uppercase; }
+
+.header__user-list:hover li {
+  display: block; }
+
+.header__user-list li:hover a {
+  color: green;
+  font-size: 20px; }
+
+.header__search {
+  position: relative;
+  width: 300px;
+  margin-left: 20px;
+  height: 42px; }
+  .header__search button {
+    background: transparent;
+    border: none;
+    height: 42px;
+    width: 42px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer; }
+  .header__search input {
+    height: 42px;
+    width: 0;
+    padding: 0 42px 0 45px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    outline: none;
+    background: transparent;
+    transition: 0.4s cubic-bezier(0, 0.8, 0, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    font-size: 20px; }
+  .header__search input:focus {
+    width: 300px;
+    z-index: 1;
+    border-bottom: 2px solid #000; }
+
+.content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  margin-top: 20px; }
+
+.main-menu {
+  border-right: 2px solid #dbddde; }
+  .main-menu__item {
+    font-size: 16px;
+    margin: 20px 35px 20px 0;
+    white-space: nowrap; }
+    .main-menu__item i {
+      margin-right: 15px; }
+
+.menu-active i {
+  color: #90c553; }
+
+.account__menu li {
+  margin: 20px 35px 20px 0; }
+  .account__menu li i {
+    margin-right: 25px; }
+
+#block2 {
+  width: 650px; }
+  #block2 h2 {
+    white-space: nowrap;
+    max-width: 210px; }
+
+.sub-menu {
+  margin-top: 15px; }
+  .sub-menu__active {
+    display: block; }
+    .sub-menu__active i {
+      color: #90c553; }
+
+.hide {
+  display: none; }
+
+.account__menu {
+  padding-left: 20px;
+  border-left: 2px solid #dbddde; }
+
+.main-f__item {
+  margin: 0 110px 0 50px; }
+  .main-f__item h2 {
+    max-width: 90px;
+    font-size: 25px;
+    padding-bottom: 12px;
+    border-bottom: 4px solid #90c553; }
+
+.main-f__button, .main-f__name, .main-f__contact {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.main-f__button {
+  margin: 20px 5px 0 5px; }
+
+.input {
+  width: 295px;
+  height: 38px;
+  border: 2px solid #dbddde;
+  border-radius: 8px;
+  padding-left: 10px;
+  margin: 5px; }
+
+.button-m {
+  width: 185px;
+  height: 38px;
+  background-color: #90c553;
+  border: none;
+  color: #fff;
+  border-radius: 8px; }
